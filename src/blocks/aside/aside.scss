@@ -11,19 +11,17 @@ $aside: '.aside';
     overflow-y: scroll;
     z-index: 9999;
     pointer-events: none;
+    -webkit-tap-highlight-color: transparent;
 
     &__wrapper {
-        width: 300px;
+        width: 80%;
         padding: 50px 0;
         background-color: $color-silver;
         box-shadow: 10px 0 5px -2px $color-boulder;
-        transform: translateX(-103%);
+        transform: translateX(-105%);
         backface-visibility: hidden;
         will-change: transform;
-
-        @include respond-to('small') {
-            width: 280px;
-        }
+        touch-action: none;
     }
 
     &__header {
