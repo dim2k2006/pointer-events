@@ -1,6 +1,25 @@
 $footer: '.footer';
 
 #{$footer} {
+    position: relative;
     flex: none;
-    background-color: blue;
+    height: 100px;
+    background-color: $color-silver;
+
+    &:after {
+        content: 'footer';
+        position: absolute;
+        display: block;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-weight: bold;
+        font-size: $font-size-large;
+        line-height: $line-height-prelittle;
+        color: darken($color-silver, 20%);
+    }
+
+    @include respond-to('prebig') {
+        height: 80px;
+    }
 }
