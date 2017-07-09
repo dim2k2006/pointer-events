@@ -4,9 +4,10 @@ export default {
 
     src: {
         styles: './src/sass',
-        scripts: './src/blocks',
+        scripts: './src/js',
         images: './src/images',
-        fonts: './src/fonts'
+        fonts: './src/fonts',
+        blocks: './src/blocks'
     },
 
     dist: {
