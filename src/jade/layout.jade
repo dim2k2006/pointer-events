@@ -1,9 +1,8 @@
-<!DOCTYPE html>
-
 include mixins/bemto
+include ../blocks/header/header
+include ../blocks/footer/footer
 
-block vars
-    - var innerPage = false
+doctype html
 
 html(lang="ru")
 
@@ -17,8 +16,6 @@ html(lang="ru")
         meta(name="Keywords" content=pageKeywords || "")
         title=pageTitle || ""
 
-        link(rel="shortcut icon", href="images/favicon.png", type="image/x-icon")
-
         link(href='css/vendor.min.css' rel='stylesheet')
         link(href='css/main.min.css' rel='stylesheet')
 
@@ -27,15 +24,14 @@ html(lang="ru")
         script(src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js")
         <![endif]-->
     body
+        +b('div').wrapper
+            +header
 
-        include ../blocks/header/header
+            +b('main').main
 
-        +b('main').main
+                block content
 
-            block content
+            +footer
 
-        include ../blocks/footer/footer
-
-        script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js')
         script(src='scripts/vendor.min.js')
         script(src='scripts/main.min.js')
