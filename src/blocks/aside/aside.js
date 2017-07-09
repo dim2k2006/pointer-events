@@ -124,7 +124,7 @@
          */
         self.updatePosition = () => {
             requestAnimationFrame(() => {
-                const diff = Math.min(10, self.currentPosition - self.startPosition);
+                const diff = Math.min(0, self.currentPosition - self.startPosition);
 
                 self.wrapper.style.transform = 'translateX(' + diff + 'px)';
             });
