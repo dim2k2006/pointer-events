@@ -7,8 +7,7 @@ $main: '.main';
     border-bottom: 15px solid $color-white;
     background-color: $color-silver;
 
-    &:after {
-        content: 'main';
+    &__wrapper {
         position: absolute;
         display: block;
         top: 50%;
