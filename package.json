@@ -1,15 +1,12 @@
 {
-    "name": "generator-webapp-jade-sass",
+    "name": "pointer-events",
     "version": "0.1.0",
-    "description": "A yo generator for jade and sass projects",
+    "description": "pointer-events",
     "keywords": [
-        "yeoman-generator",
-        "webapp",
-        "jade",
-        "sass"
+        "pointer-events"
     ],
-    "homepage": "https://github.com/dim2k2006/generator-jade-sass",
-    "bugs": "https://github.com/dim2k2006/generator-jade-sass/issues",
+    "homepage": "https://github.com/dim2k2006/pointer-events",
+    "bugs": "https://github.com/dim2k2006/pointer-events/issues",
     "author": {
         "name": "Dmitry",
         "email": "dim2k2006@yandex.ru",
@@ -72,15 +69,12 @@
     },
     "vendorStyles": {
         "path": [
-            "./src/bower_components/normalize.css/normalize.css",
-            "./src/bower_components/lightslider/dist/css/lightslider.min.css"
+            "./src/bower_components/normalize.css/normalize.css"
         ]
     },
     "vendorScripts": {
         "path": [
-            "./src/bower_components/lightslider/dist/js/lightslider.min.js",
-            "./src/bower_components/matchHeight/dist/jquery.matchHeight.js",
-            "./node_modules/es5-shim/es5-shim.min.js"
+
         ]
     }
 }
