@@ -1,9 +1,5 @@
 // Font-family
-$font-family-bold: 'open_sansbold', Arial, Helvetica, sans-serif;
-$font-family-italic: 'open_sansitalic', Arial, Helvetica, sans-serif;
-$font-family-light: 'open_sanslight', Arial, Helvetica, sans-serif;
-$font-family-regular: 'open_sansregular', Arial, Helvetica, sans-serif;
-$font-family-semibold: 'open_sanssemibold', Arial, Helvetica, sans-serif;
+$font-family-default: Helvetica, Arial, sans-serif;
 
 // Font-size
 $font-size-prelittle: 8px;
@@ -95,14 +91,6 @@ $color-casablanca: #f9a94f;
 
 // global
 $minWidth: 320px;
-
-// header
-$headerHeight: (
-    'normal': 170px,
-    'tablet': 80px,
-    'mobile': 60px
-);
-
 
 // Breakpoints
 $breakpoints: (
