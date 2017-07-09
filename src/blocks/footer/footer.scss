@@ -6,8 +6,7 @@ $footer: '.footer';
     height: 100px;
     background-color: $color-silver;
 
-    &:after {
-        content: 'footer';
+    &__wrapper {
         position: absolute;
         display: block;
         top: 50%;
