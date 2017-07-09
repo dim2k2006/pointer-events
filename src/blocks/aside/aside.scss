@@ -20,6 +20,10 @@ $aside: '.aside';
         transform: translateX(-103%);
         backface-visibility: hidden;
         will-change: transform;
+
+        @include respond-to('small') {
+            width: 280px;
+        }
     }
 
     &__header {
@@ -51,11 +55,12 @@ $aside: '.aside';
     &__close {
         position: absolute;
         display: block;
-        width: 40px;
-        height: 40px;
-        top: 5px;
-        left: 5px;
+        width: 50px;
+        height: 50px;
+        top: 0;
+        left: 0;
         cursor: pointer;
+        touch-action: none;
 
         svg {
             position: absolute;
@@ -72,7 +77,7 @@ $aside: '.aside';
         }
     }
 
-    &#{$aside}_state_active {
+    &#{$aside}_state_open {
         pointer-events: auto;
 
         #{$aside} {

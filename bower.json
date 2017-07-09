@@ -2,7 +2,8 @@
   "name": "pointer-events",
   "version": "0.1.0",
   "dependencies": {
-      "normalize.css": "~3.0.3",
-      "susy": "^2.2.12"
+    "normalize.css": "~3.0.3",
+    "susy": "^2.2.12",
+    "pepjs": "^0.4.3"
   }
 }
