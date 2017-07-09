@@ -1,6 +1,7 @@
 include mixins/bemto
 include ../blocks/header/header
 include ../blocks/footer/footer
+include ../blocks/aside/aside
 
 doctype html
 
@@ -28,10 +29,13 @@ html(lang="ru")
             +header
 
             +b('main').main
+                +e('div').wrapper!= "main"
 
                 block content
 
             +footer
+
+        +aside
 
         script(src='scripts/vendor.min.js')
         script(src='scripts/main.min.js')

@@ -1,0 +1,24 @@
+mixin aside
+    +b('aside').aside(class="aside_state_transition")
+        +e('div').wrapper
+            +e('div').header!= "aside"
+
+            +e('div').content
+                +e('ul').list
+                    +e('li').item
+                        +e('a').link(href="#")!= "Home"
+
+                    +e('li').item
+                        +e('a').link(href="#")!= "About"
+
+                    +e('li').item
+                        +e('a').link(href="#")!= "Market"
+
+                    +e('li').item
+                        +e('a').link(href="#")!= "Contacts"
+
+                    +e('li').item
+                        +e('a').link(href="#")!= "Social"
+
+            +e('div').close
+                +e('img')(src="images/ico-close.svg")
