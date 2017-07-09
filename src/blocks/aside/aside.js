@@ -37,7 +37,7 @@
         self.setupListener = () => {
             self.container.addEventListener('click',  self.containerClick);
 
-            self.openBtn.addEventListener('pointerdown', self.open);
+            self.openBtn.addEventListener('click', self.open);
             self.closeBtn.addEventListener('click', self.close);
 
             self.wrapper.addEventListener('pointerdown', self.onPointerDown);

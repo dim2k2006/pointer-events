@@ -32,6 +32,7 @@ $header: '.header';
         transform: translateY(-50%);
         cursor: pointer;
         touch-action: none;
+        -webkit-tap-highlight-color: transparent;
     }
 
     &__line {
